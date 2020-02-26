@@ -40,6 +40,7 @@ exports[`DateField has custom yearMax and yearMin 1`] = `
       <input
         aria-describedby="datefield_label_snapshot"
         aria-label={undefined}
+        autocomplete={undefined}
         className="ds-c-field ds-c-field--month"
         defaultValue={undefined}
         id="textfield_snapshot"
@@ -75,6 +76,7 @@ exports[`DateField has custom yearMax and yearMin 1`] = `
       <input
         aria-describedby="datefield_label_snapshot"
         aria-label={undefined}
+        autocomplete={undefined}
         className="ds-c-field ds-c-field--day"
         defaultValue={undefined}
         id="textfield_snapshot"
@@ -110,6 +112,7 @@ exports[`DateField has custom yearMax and yearMin 1`] = `
       <input
         aria-describedby="datefield_label_snapshot"
         aria-label={undefined}
+        autocomplete={undefined}
         className="ds-c-field ds-c-field--year"
         defaultValue={undefined}
         id="textfield_snapshot"
@@ -174,6 +177,7 @@ exports[`DateField has errorMessage 1`] = `
       <input
         aria-describedby="datefield_label_snapshot"
         aria-label={undefined}
+        autocomplete={undefined}
         className="ds-c-field ds-c-field--month"
         defaultValue={undefined}
         id="textfield_snapshot"
@@ -209,6 +213,7 @@ exports[`DateField has errorMessage 1`] = `
       <input
         aria-describedby="datefield_label_snapshot"
         aria-label={undefined}
+        autocomplete={undefined}
         className="ds-c-field ds-c-field--day"
         defaultValue={undefined}
         id="textfield_snapshot"
@@ -244,6 +249,7 @@ exports[`DateField has errorMessage 1`] = `
       <input
         aria-describedby="datefield_label_snapshot"
         aria-label={undefined}
+        autocomplete={undefined}
         className="ds-c-field ds-c-field--year"
         defaultValue={undefined}
         id="textfield_snapshot"
@@ -301,6 +307,7 @@ exports[`DateField has invalid day 1`] = `
       <input
         aria-describedby="datefield_label_snapshot"
         aria-label={undefined}
+        autocomplete={undefined}
         className="ds-c-field ds-c-field--month"
         defaultValue={undefined}
         id="textfield_snapshot"
@@ -336,6 +343,7 @@ exports[`DateField has invalid day 1`] = `
       <input
         aria-describedby="datefield_label_snapshot"
         aria-label={undefined}
+        autocomplete={undefined}
         className="ds-c-field ds-c-field--day ds-c-field--error"
         defaultValue={undefined}
         id="textfield_snapshot"
@@ -371,6 +379,7 @@ exports[`DateField has invalid day 1`] = `
       <input
         aria-describedby="datefield_label_snapshot"
         aria-label={undefined}
+        autocomplete={undefined}
         className="ds-c-field ds-c-field--year"
         defaultValue={undefined}
         id="textfield_snapshot"
@@ -428,6 +437,7 @@ exports[`DateField has invalid month 1`] = `
       <input
         aria-describedby="datefield_label_snapshot"
         aria-label={undefined}
+        autocomplete={undefined}
         className="ds-c-field ds-c-field--month ds-c-field--error"
         defaultValue={undefined}
         id="textfield_snapshot"
@@ -463,6 +473,7 @@ exports[`DateField has invalid month 1`] = `
       <input
         aria-describedby="datefield_label_snapshot"
         aria-label={undefined}
+        autocomplete={undefined}
         className="ds-c-field ds-c-field--day"
         defaultValue={undefined}
         id="textfield_snapshot"
@@ -498,6 +509,7 @@ exports[`DateField has invalid month 1`] = `
       <input
         aria-describedby="datefield_label_snapshot"
         aria-label={undefined}
+        autocomplete={undefined}
         className="ds-c-field ds-c-field--year"
         defaultValue={undefined}
         id="textfield_snapshot"
@@ -555,6 +567,7 @@ exports[`DateField has invalid year 1`] = `
       <input
         aria-describedby="datefield_label_snapshot"
         aria-label={undefined}
+        autocomplete={undefined}
         className="ds-c-field ds-c-field--month"
         defaultValue={undefined}
         id="textfield_snapshot"
@@ -590,6 +603,7 @@ exports[`DateField has invalid year 1`] = `
       <input
         aria-describedby="datefield_label_snapshot"
         aria-label={undefined}
+        autocomplete={undefined}
         className="ds-c-field ds-c-field--day"
         defaultValue={undefined}
         id="textfield_snapshot"
@@ -625,6 +639,7 @@ exports[`DateField has invalid year 1`] = `
       <input
         aria-describedby="datefield_label_snapshot"
         aria-label={undefined}
+        autocomplete={undefined}
         className="ds-c-field ds-c-field--year ds-c-field--error"
         defaultValue={undefined}
         id="textfield_snapshot"
@@ -684,6 +699,7 @@ exports[`DateField has requirementLabel 1`] = `
       <input
         aria-describedby="datefield_label_snapshot"
         aria-label={undefined}
+        autocomplete={undefined}
         className="ds-c-field ds-c-field--month"
         defaultValue={undefined}
         id="textfield_snapshot"
@@ -719,6 +735,7 @@ exports[`DateField has requirementLabel 1`] = `
       <input
         aria-describedby="datefield_label_snapshot"
         aria-label={undefined}
+        autocomplete={undefined}
         className="ds-c-field ds-c-field--day"
         defaultValue={undefined}
         id="textfield_snapshot"
@@ -754,6 +771,7 @@ exports[`DateField has requirementLabel 1`] = `
       <input
         aria-describedby="datefield_label_snapshot"
         aria-label={undefined}
+        autocomplete={undefined}
         className="ds-c-field ds-c-field--year"
         defaultValue={undefined}
         id="textfield_snapshot"
@@ -811,6 +829,7 @@ exports[`DateField is inversed 1`] = `
       <input
         aria-describedby="datefield_label_snapshot"
         aria-label={undefined}
+        autocomplete={undefined}
         className="ds-c-field ds-c-field--inverse ds-c-field--month"
         defaultValue={undefined}
         id="textfield_snapshot"
@@ -846,6 +865,7 @@ exports[`DateField is inversed 1`] = `
       <input
         aria-describedby="datefield_label_snapshot"
         aria-label={undefined}
+        autocomplete={undefined}
         className="ds-c-field ds-c-field--inverse ds-c-field--day"
         defaultValue={undefined}
         id="textfield_snapshot"
@@ -881,6 +901,7 @@ exports[`DateField is inversed 1`] = `
       <input
         aria-describedby="datefield_label_snapshot"
         aria-label={undefined}
+        autocomplete={undefined}
         className="ds-c-field ds-c-field--inverse ds-c-field--year"
         defaultValue={undefined}
         id="textfield_snapshot"
@@ -938,6 +959,7 @@ exports[`DateField renders with all defaultProps 1`] = `
       <input
         aria-describedby="datefield_label_snapshot"
         aria-label={undefined}
+        autocomplete={undefined}
         className="ds-c-field ds-c-field--month"
         defaultValue={undefined}
         id="textfield_snapshot"
@@ -973,6 +995,7 @@ exports[`DateField renders with all defaultProps 1`] = `
       <input
         aria-describedby="datefield_label_snapshot"
         aria-label={undefined}
+        autocomplete={undefined}
         className="ds-c-field ds-c-field--day"
         defaultValue={undefined}
         id="textfield_snapshot"
@@ -1008,6 +1031,7 @@ exports[`DateField renders with all defaultProps 1`] = `
       <input
         aria-describedby="datefield_label_snapshot"
         aria-label={undefined}
+        autocomplete={undefined}
         className="ds-c-field ds-c-field--year"
         defaultValue={undefined}
         id="textfield_snapshot"
