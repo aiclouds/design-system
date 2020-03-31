@@ -1,4 +1,3 @@
-import 'core-js/fn/array/find-index';
 import PropTypes from 'prop-types';
 import React from 'react';
 import Tab from './Tab';
@@ -190,6 +189,9 @@ export class Tabs extends React.PureComponent {
 }
 
 Tabs.propTypes = {
+  /**
+   * Must only contain `TabPanel` components
+   */
   children: PropTypes.node.isRequired,
   /**
    * Sets the initial selected `TabPanel` state. If this isn't set, the first

@@ -143,7 +143,9 @@ VerticalNavItem.defaultProps = {
 };
 
 VerticalNavItem.propTypes = {
-  // This gets passed through from the parent VerticalNav to a nested VerticalNav
+  /**
+   * @hide-prop This gets passed through from the parent VerticalNav to a nested VerticalNav
+   */
   _selectedId: PropTypes.string,
   /**
    * Aria label for the toggle button when the sub-navigation is collapsed
@@ -161,7 +163,7 @@ VerticalNavItem.propTypes = {
    * When provided, this will render the passed in component. This is useful when
    * integrating with React Router's `<Link>` or using your own custom component.
    */
-  component: PropTypes.oneOfType([PropTypes.element, PropTypes.func]),
+  component: PropTypes.oneOfType([PropTypes.element, PropTypes.elementType, PropTypes.func]),
   /**
    * Whether or not the item's sub-navigation is in a collapsed state by default
    */

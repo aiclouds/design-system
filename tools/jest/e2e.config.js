@@ -1,8 +1,6 @@
 const headless = process.env.HEADLESS ? JSON.parse(process.env.HEADLESS) : true;
 const browser = headless ? 'chrome' : process.env.BROWSER || 'chrome';
-const chromeOptions = headless && {
-  args: ['--headless', '--window-size=1024,768', '--no-sandbox', '--disable-dev-shm-usage']
-};
+const chromeOptions = headless && ['--headless', '--window-size=1024,768'];
 
 const validBrowsers = ['chrome', 'firefox', 'safari', 'ie', 'edge'];
 if (!validBrowsers.includes(browser)) {
@@ -17,14 +15,11 @@ module.exports = {
   testURL: 'http://localhost',
   globalSetup: '<rootDir>/tools/jest/e2e.global-setup.js',
   globalTeardown: '<rootDir>/tools/jest/e2e.global-teardown.js',
-  setupFiles: ['<rootDir>/tools/jest/e2e.polyfills.js'],
+  setupFiles: ['<rootDir>/tools/jest/polyfills.js'],
   testMatch: ['<rootDir>/packages/core/src/**/?*.e2e.test.js'],
   testEnvironment: '<rootDir>/tools/jest/e2e.environment.js',
   testEnvironmentOptions: {
     browser,
     chromeOptions
-  },
-  transform: {
-    '^.+\\.(js|jsx|mjs)$': '<rootDir>/node_modules/babel-jest'
   }
 };

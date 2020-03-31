@@ -5,7 +5,7 @@ import classNames from 'classnames';
 
 export class Review extends React.PureComponent {
   heading() {
-    const Heading = this.props.headingLevel ? `h${this.props.headingLevel}` : `h3`;
+    const Heading = `h${this.props.headingLevel}` || `h3`;
     if (this.props.heading) {
       return (
         <Heading className="ds-c-review__heading ds-text ds-u-margin-bottom--0 ds-u-font-weight--bold ds-u-display--inline-block">
@@ -47,10 +47,14 @@ export class Review extends React.PureComponent {
 }
 
 Review.defaultProps = {
-  editText: 'Edit'
+  editText: 'Edit',
+  headingLevel: '3'
 };
 
 Review.propTypes = {
+  /**
+   * `Review` component's body HTML.
+   */
   children: PropTypes.node.isRequired,
   className: PropTypes.string,
   /**
@@ -71,7 +75,7 @@ Review.propTypes = {
   /**
    * Heading type to override default `<h3>`.
    */
-  headingLevel: PropTypes.number,
+  headingLevel: PropTypes.oneOf(['1', '2', '3', '4', '5']),
   /**
    * An optional function that is executed on edit link click. The event and
    * props.editHref value are passed to this function.
