@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Example: components.date-field</title>
-  <link rel="stylesheet" href="/pages/MedicareGov/ds-site-package/public/styles/example.css" />
+  <link rel="stylesheet" href="/public/styles/example.css" />
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet" />
 </head>
 <body class="ds-base">
@@ -20,9 +20,9 @@
       >
       <input
         class="ds-c-field ds-c-field--month"
-        type="number"
-        min="1"
-        max="12"
+        type="text"
+        inputmode="numeric"
+        pattern="[0-9]*"
         id="month"
         name="birthdate[month]"
       />
@@ -32,9 +32,9 @@
       <label class="ds-c-label ds-u-font-weight--normal ds-u-margin-top--1" for="day">Day</label>
       <input
         class="ds-c-field ds-c-field--day"
-        type="number"
-        min="1"
-        max="31"
+        type="text"
+        inputmode="numeric"
+        pattern="[0-9]*"
         id="day"
         name="birthdate[day]"
       />
@@ -44,9 +44,9 @@
       <label class="ds-c-label ds-u-font-weight--normal ds-u-margin-top--1" for="year">Year</label>
       <input
         class="ds-c-field ds-c-field--year"
-        type="number"
-        min="1900"
-        max="2000"
+        type="text"
+        inputmode="numeric"
+        pattern="[0-9]*"
         id="year"
         name="birthdate[year]"
       />
@@ -54,6 +54,6 @@
   </div>
 </fieldset>
 
-  <script type="text/javascript" src="/pages/MedicareGov/ds-site-package/public/scripts/example.js"></script>
+  <script type="text/javascript" src="/public/scripts/example.js"></script>
 </body>
 </html>

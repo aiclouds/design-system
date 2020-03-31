@@ -1,16 +1,15 @@
-'use strict';
+"use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
-var _HHSlogo = require('./HHSlogo');
-
-Object.defineProperty(exports, 'default', {
+Object.defineProperty(exports, "default", {
   enumerable: true,
   get: function get() {
-    return _interopRequireDefault(_HHSlogo).default;
+    return _HHSlogo.default;
   }
 });
+
+var _HHSlogo = _interopRequireDefault(require("./HHSlogo"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

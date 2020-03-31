@@ -1,16 +1,15 @@
-'use strict';
+"use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
-var _Navbar = require('./Navbar');
-
-Object.defineProperty(exports, 'default', {
+Object.defineProperty(exports, "default", {
   enumerable: true,
   get: function get() {
-    return _interopRequireDefault(_Navbar).default;
+    return _Navbar.default;
   }
 });
+
+var _Navbar = _interopRequireDefault(require("./Navbar"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

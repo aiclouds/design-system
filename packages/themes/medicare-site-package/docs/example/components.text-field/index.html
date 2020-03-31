@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Example: components.text-field</title>
-  <link rel="stylesheet" href="/pages/MedicareGov/ds-site-package/public/styles/example.css" />
+  <link rel="stylesheet" href="/public/styles/example.css" />
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet" />
 </head>
 <body class="ds-base">
@@ -21,7 +21,15 @@
 <label class="ds-c-label" for="input-number">
   Number field
 </label>
-<input class="ds-c-field" id="input-number" name="number" value="123" type="number" />
+<input
+  class="ds-c-field"
+  id="input-number"
+  name="number"
+  value="123"
+  type="text"
+  inputmode="numeric"
+  pattern="[0-9]*"
+/>
 <label class="ds-c-label" for="input-small">Small size modifier</label>
 <input class="ds-c-field ds-c-field--small" id="input-small" name="tinysize" type="text" />
 <label class="ds-c-label" for="input-medium">Medium size modifier</label>
@@ -71,6 +79,6 @@
   <input class="ds-c-field ds-c-field--inverse" id="input-inverse" name="inverse" type="text" />
 </div>
 
-  <script type="text/javascript" src="/pages/MedicareGov/ds-site-package/public/scripts/example.js"></script>
+  <script type="text/javascript" src="/public/scripts/example.js"></script>
 </body>
 </html>

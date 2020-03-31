@@ -1,44 +1,63 @@
-'use strict';
+"use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.SimpleHeader = exports.SimpleFooter = exports.ComplexHeader = exports.NavigationMenu = exports.Navbar = exports.MedicaregovLogo = exports.HHSLogo = undefined;
+Object.defineProperty(exports, "ComplexHeader", {
+  enumerable: true,
+  get: function get() {
+    return _ComplexHeader.default;
+  }
+});
+Object.defineProperty(exports, "HHSLogo", {
+  enumerable: true,
+  get: function get() {
+    return _HHSlogo.default;
+  }
+});
+Object.defineProperty(exports, "MedicaregovLogo", {
+  enumerable: true,
+  get: function get() {
+    return _MedicaregovLogo.default;
+  }
+});
+Object.defineProperty(exports, "Navbar", {
+  enumerable: true,
+  get: function get() {
+    return _Navbar.default;
+  }
+});
+Object.defineProperty(exports, "NavigationMenu", {
+  enumerable: true,
+  get: function get() {
+    return _NavigationMenu.default;
+  }
+});
+Object.defineProperty(exports, "SimpleFooter", {
+  enumerable: true,
+  get: function get() {
+    return _SimpleFooter.default;
+  }
+});
+Object.defineProperty(exports, "SimpleHeader", {
+  enumerable: true,
+  get: function get() {
+    return _SimpleHeader.default;
+  }
+});
 
-var _ComplexHeader = require('./ComplexHeader/ComplexHeader');
+var _ComplexHeader = _interopRequireDefault(require("./ComplexHeader/ComplexHeader"));
 
-var _ComplexHeader2 = _interopRequireDefault(_ComplexHeader);
+var _HHSlogo = _interopRequireDefault(require("./HHSlogo"));
 
-var _HHSlogo = require('./HHSlogo');
+var _MedicaregovLogo = _interopRequireDefault(require("./MedicaregovLogo"));
 
-var _HHSlogo2 = _interopRequireDefault(_HHSlogo);
+var _Navbar = _interopRequireDefault(require("./Navbar"));
 
-var _MedicaregovLogo = require('./MedicaregovLogo');
+var _NavigationMenu = _interopRequireDefault(require("./NavigationMenu"));
 
-var _MedicaregovLogo2 = _interopRequireDefault(_MedicaregovLogo);
+var _SimpleFooter = _interopRequireDefault(require("./SimpleFooter/SimpleFooter"));
 
-var _Navbar = require('./Navbar');
-
-var _Navbar2 = _interopRequireDefault(_Navbar);
-
-var _NavigationMenu = require('./NavigationMenu');
-
-var _NavigationMenu2 = _interopRequireDefault(_NavigationMenu);
-
-var _SimpleFooter = require('./SimpleFooter/SimpleFooter');
-
-var _SimpleFooter2 = _interopRequireDefault(_SimpleFooter);
-
-var _SimpleHeader = require('./SimpleHeader/SimpleHeader');
-
-var _SimpleHeader2 = _interopRequireDefault(_SimpleHeader);
+var _SimpleHeader = _interopRequireDefault(require("./SimpleHeader/SimpleHeader"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.HHSLogo = _HHSlogo2.default;
-exports.MedicaregovLogo = _MedicaregovLogo2.default;
-exports.Navbar = _Navbar2.default;
-exports.NavigationMenu = _NavigationMenu2.default;
-exports.ComplexHeader = _ComplexHeader2.default;
-exports.SimpleFooter = _SimpleFooter2.default;
-exports.SimpleHeader = _SimpleHeader2.default;
