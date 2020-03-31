@@ -5,10 +5,144 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Example: components.close-icon.react</title>
   <link rel="stylesheet" href="/public/styles/example.css" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet" />
 </head>
 <body class="ds-base">
-  
-  <script type="text/javascript" src="/public/scripts/example.js"></script>
+  <div id="js-example"></div>
+      <script type="text/javascript" src="/public/scripts/example.js"></script>
+      <script type="text/javascript">/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = "./packages/themes/medicare-site-package/src/components/CloseSymbol/CloseSymbol.example.jsx");
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./packages/themes/medicare-site-package/src/components/CloseSymbol/CloseSymbol.example.jsx":
+/*!**************************************************************************************************!*\
+  !*** ./packages/themes/medicare-site-package/src/components/CloseSymbol/CloseSymbol.example.jsx ***!
+  \**************************************************************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"react-dom\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _CloseSymbol__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CloseSymbol */ \"./packages/themes/medicare-site-package/src/components/CloseSymbol/CloseSymbol.jsx\");\n\n\n\nreact_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CloseSymbol__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null), document.getElementById('js-example'));\n\n//# sourceURL=webpack:///./packages/themes/medicare-site-package/src/components/CloseSymbol/CloseSymbol.example.jsx?");
+
+/***/ }),
+
+/***/ "./packages/themes/medicare-site-package/src/components/CloseSymbol/CloseSymbol.jsx":
+/*!******************************************************************************************!*\
+  !*** ./packages/themes/medicare-site-package/src/components/CloseSymbol/CloseSymbol.jsx ***!
+  \******************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar Close = function Close() {\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"svg\", {\n    width: \"22px\",\n    height: \"22px\",\n    viewBox: \"0 0 22 22\",\n    version: \"1.1\",\n    xmlns: \"http://www.w3.org/2000/svg\",\n    xmlnsXlink: \"http://www.w3.org/1999/xlink\"\n  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"title\", null, \"Close\"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"g\", {\n    id: \"Symbols\",\n    stroke: \"none\",\n    strokeWidth: \"1\",\n    fill: \"none\",\n    fillRule: \"evenodd\"\n  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"g\", {\n    id: \"Icons/Close\",\n    transform: \"translate(-6.000000, -6.000000)\",\n    fill: \"#146A5D\"\n  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"path\", {\n    d: \"M18.6874718,17 L27.7667318,7.92073996 C28.0777561,7.60971575 28.0777561,7.10678297 27.7667318,6.79575876 L27.2042412,6.23326816 C26.893217,5.92224395 26.3902843,5.92224395 26.07926,6.23326816 L17,15.3125282 L7.92073996,6.2398857 C7.60971575,5.92886148 7.10678297,5.92886148 6.79575876,6.2398857 L6.23326816,6.8023763 C5.92224395,7.11340051 5.92224395,7.61633328 6.23326816,7.9273575 L15.3125282,17 L6.2398857,26.07926 C5.92886148,26.3902843 5.92886148,26.893217 6.2398857,27.2042412 L6.8023763,27.7667318 C7.11340051,28.0777561 7.61633328,28.0777561 7.9273575,27.7667318 L17,18.6874718 L26.07926,27.7667318 C26.3902843,28.0777561 26.893217,28.0777561 27.2042412,27.7667318 L27.7667318,27.2042412 C28.0777561,26.893217 28.0777561,26.3902843 27.7667318,26.07926 L18.6874718,17 Z\",\n    id: \"Path\"\n  }))));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Close);\n\n//# sourceURL=webpack:///./packages/themes/medicare-site-package/src/components/CloseSymbol/CloseSymbol.jsx?");
+
+/***/ }),
+
+/***/ "react":
+/*!************************!*\
+  !*** external "React" ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = React;\n\n//# sourceURL=webpack:///external_%22React%22?");
+
+/***/ }),
+
+/***/ "react-dom":
+/*!***************************!*\
+  !*** external "ReactDOM" ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = ReactDOM;\n\n//# sourceURL=webpack:///external_%22ReactDOM%22?");
+
+/***/ })
+
+/******/ });</script>
 </body>
 </html>
