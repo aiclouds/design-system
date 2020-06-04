@@ -3,31 +3,44 @@ title: Child Design Systems
 weight: 6
 ---
 
-The CMS design system (CMSDS) provides a set of components and styles to meet many design and development needs. However, there are cases where product teams need to modify a design system beyond [theming]({{root}}/startup/theming/) and publish a child design system for other product teams to consume.
+The CMS design system (CMSDS) provides a set of components and styles to meet many design and development needs. However, there are cases where teams need to make modifications beyond [theming]({{root}}/startup/theming/) or where assets need to be published for multiple teams to use. Child design systems are intended for these use cases.
 
 ## What is a child design system?
 
-A child design system is a design system built off of the core CMSDS for a specific context. It contains custom assets (components, styles, etc..) and is published via NPM to be consumed by multiple product teams. A child design system can contain new components, modifications to existing core components, or modifications to styles. Child design systems import the core CMSDS as a dependency which allows for receiving updates, using developer tools, scripts, and documentation from the core CMSDS to manage their own design system.
+Child design systems are extentions of the core CMSDS for a specific context or site. They consist of:
 
-**Note** Child design systems were previously called "site packages". This change in nomenclature reflects our vision for these systems to be more independent and self sustaining within the CMS Design System family. Many of the internal changes in the v2 release aim to facilitiate this vision by simplifying the experience of maintaining and contributing to child design systems.
+- Core CMSDS components & styles
+- New and modified components & styles
+- A preconfigured, customizable documentation site
+- An NPM package
+- A group of active maintainers and contributors consisting of the users of the child design system
+
+Child design systems recieve updates from the core CMSDS by importing [`@cmsgov/design-system`](https://github.com/CMSgov/design-system/tree/master/packages/design-system) as dependency. They also share tooling ((`cmsgov/design-system-scripts`)[https://github.com/CMSgov/design-system/tree/master/packages/design-system-scripts]) and documentation ([`cmsgov/design-system-docs`](https://github.com/CMSgov/design-system/tree/master/packages/design-system-docs)) with the core CMSDS so teams have the resources and best practices to maintain a child design system.
+
+<div class="ds-c-alert ds-c-alert--warn ds-u-margin-bottom--2 ds-u-font-size--small">
+  <div class="ds-c-alert__body">
+    <h3 class="ds-c-alert__heading ds-u-font-size--base">Note on naming</h3>
+    <p class="ds-c-alert__text">
+      Child design systems were previously called "site packages". We changed the name because many teams found the terminology confusing, and we believe "child design systems" better reflects our vision for independent and self-sustaining systems within the CMS Design System family. 
+    </p>
+  </div>
+</div>
 
 ## Who should use a child design system?
 
-A common use case for child design systems is when multiple product teams are working under the same CMS site. These separate product teams would share custom assets and code (i.e. brand colors, site header, custom icons, etc), and would benefit from a documentation site to reference as a single source of truth. If you are working as a single team and don't have a need for a documentation site, a child design system is probably not for you.
+Child design systems are commonly used when multiple product teams work under the same CMS site. Child design systems help teams build products under the same brand and experience by providing common assets (i.e. brand colors, site header, custom icons, etc) and a documentation site for teams to collaborate around.
 
-### Child design system guidelines
-
-- A child design system should be actively maintained by product teams using the child design system. The core CMSDS team is not responsible for updating child design systems, however we are responsible for guidelines and assisting with training and adoption.
-- Users of child design system should contribute back to the larger CMS design system community by filing issues/bugs in Github or Jira, giving feedback, and general maintenance. Collaboration and participation are essential to the success of the CMS design system family.
-- A child design system should defer to the core CMS design system for best practices or accessibility guidelines.
-
-### Existing child design systems
+### Existing child design systems:
 
 - [Healthcare.gov Child Design System](https://github.cms.gov/CMS-WDS/ds-healthcare-gov)
 - [Medicare.gov Child Design System](https://github.cms.gov/MedicareGov/ds-site-package)
 
----
+## Child design system guidelines
 
-**Note**: If you plan to document and show React component examples, your theme directory should include a valid [`.babelrc`](https://babeljs.io/docs/usage/babelrc/) to describe how your modules should be transformed.
+- A child design system should be actively maintained by product teams using the system. This includes releasing new versions and publishing the documentation site. The core CMSDS team is not responsible for these tasks; however the core team is responsible for contributing updates at the core level, and assisting with design system adoption and processes.
+- Users of child design system should contribute back to the larger CMS design system community by giving feedback or raising issues/bugs in Github or Jira. This type of collaboration and participation is essential to the success of the CMS design system family.
+- A child design system should defer to the core CMS design system for best practices or accessibility guidelines.
+
+## Creating a child design system
 
 [Read more about running the design system locally](https://github.com/CMSgov/design-system/blob/master/README.md#running-locally)
