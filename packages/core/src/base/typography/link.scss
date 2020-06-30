@@ -54,7 +54,9 @@
       outline: 0 none;
     }
   } @else {
-    color: $color-primary-darkest;
+    &:focus {
+      color: $color-primary-darkest;
+    }
   }
 }
 
@@ -69,7 +71,9 @@
       @include focus-text-inverse;
     }
   } @else {
-    color: $color-muted-inverse;
+    &:focus {
+      color: $color-muted-inverse;
+    }
   }
   /* stylelint-enable selector-max-specificity */
   &:visited,
