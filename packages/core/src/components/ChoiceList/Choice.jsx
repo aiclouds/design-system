@@ -22,9 +22,10 @@ export class Choice extends React.PureComponent {
 
     this.input = null;
     this.handleChange = this.handleChange.bind(this);
+    this.handleUncheck = this.handleUncheck.bind(this);
     this.id = this.props.id || uniqueId(`${this.props.type}_${this.props.name}_`);
 
-    if (typeof this.props.checked === 'undefined') {
+    if (typeof this.props.checked === 'undefined' || this.props.defaultChecked) {
       this.isControlled = false;
       // Since this isn't a controlled component, we need a way
       // to track when the value has changed. This can then be used
@@ -34,10 +35,17 @@ export class Choice extends React.PureComponent {
       // Event emitters are only relevant for uncontrolled radio buttons
       if (this.props.type === 'radio') {
         this.uncheckEventName = `${this.props.name}-uncheck`;
-        dsChoiceEmitter.on(this.uncheckEventName, this.handleUncheck.bind(this));
+        dsChoiceEmitter.on(this.uncheckEventName, this.handleUncheck);
       }
     } else {
       this.isControlled = true;
+    }
+  }
+
+  componentWillUnmount() {
+    // Unbind event emitters are only relevant for uncontrolled radio buttons
+    if (!this.isControlled && this.props.type === 'radio') {
+      dsChoiceEmitter.off(this.uncheckEventName, this.handleUncheck);
     }
   }
 
@@ -68,11 +76,11 @@ export class Choice extends React.PureComponent {
 
     if (!this.isControlled) {
       this.setState({ checked: evt.target.checked });
-    }
 
-    if (this.uncheckEventName && evt.target.checked) {
-      // Emit the uncheck event so other radio options update their state
-      dsChoiceEmitter.emitEvent(this.uncheckEventName, [this.id]);
+      if (this.uncheckEventName && evt.target.checked) {
+        // Emit the uncheck event so other radio options update their state
+        dsChoiceEmitter.emitEvent(this.uncheckEventName, [this.id]);
+      }
     }
   }
 
