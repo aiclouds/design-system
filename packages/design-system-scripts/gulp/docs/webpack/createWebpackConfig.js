@@ -55,6 +55,7 @@ module.exports = async function createWebpackConfig(sourceDir, docsDir, options)
     performance: {
       hints: false,
     },
+    stats: options.webpackStats,
   };
 
   if (process.env.NODE_ENV === 'production') {

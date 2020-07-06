@@ -214,6 +214,11 @@ function describeDocsDir(yargs) {
 
 function describeDocsOptions(yargs) {
   yargs
+    .option('webpackStats', {
+      desc: 'Stats preset for webpack output. https://webpack.js.org/configuration/stats/',
+      type: 'string',
+      default: 'errors-warnings',
+    })
     .option('name', {
       desc: 'Name of the design system. This is used to render documentation content.',
       type: 'string',

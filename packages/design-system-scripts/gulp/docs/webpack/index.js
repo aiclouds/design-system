@@ -11,7 +11,6 @@ const webpack = require('webpack');
 const webpackDevMiddleware = require('webpack-dev-middleware');
 const webpackHotMiddleware = require('webpack-hot-middleware');
 const createWebpackConfig = require('./createWebpackConfig');
-const webpackStatsConfig = require('./webpackStats.config');
 const { log, logTask, logError } = require('../../common/logUtil');
 
 module.exports = {
@@ -19,14 +18,14 @@ module.exports = {
     logTask('🚜 ', 'Running Webpack statically');
     try {
       const config = await createWebpackConfig(sourceDir, docsDir, options);
-      const stats = await util.promisify(webpack)(config); // Promisify webpack so the task will wait on the compilation to finish
+      const bundler = await util.promisify(webpack)(config); // Promisify webpack so the task will wait on the compilation to finish
 
       // TODO: Replace stats module logging with clean logTask count
       // const filesProcessed = stats.toJson(webpackStatsConfig).modules.length;
       // logTask(`📜  ${filesProcessed}`, `JS files processed in ${docsDir}`);
 
-      // Log out any errors or warnings
-      log(stats.toString(webpackStatsConfig));
+      // Log out webpack output
+      log(bundler.toString());
     } catch (err) {
       logError('webpack static', err.stack || err);
       if (err.details) {
@@ -40,6 +39,7 @@ module.exports = {
       const config = await createWebpackConfig(sourceDir, docsDir, options);
       const bundler = webpack(config);
 
+      console.log(options.webpackStats);
       browserSync.init({
         port: '3000',
         notify: false,
@@ -49,7 +49,7 @@ module.exports = {
           middleware: [
             webpackDevMiddleware(bundler, {
               publicPath: config.output.publicPath,
-              stats: webpackStatsConfig,
+              stats: options.webpackStats,
               watchOptions: {
                 ignored: /node_modules(?!\/@cmsgov)/,
               },
