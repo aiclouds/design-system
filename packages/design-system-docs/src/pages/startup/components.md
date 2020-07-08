@@ -26,7 +26,7 @@ Components can be imported from the package entry point using the syntax below.
 import { Button, TextField } from '@cmsgov/design-system';
 ```
 
-The `@cmsgov/design-system` package provides an ES modules version of our code (located in `dist/esnext`) to support Webpack 4's tree shaking optimizations. Our package is configured to let Webpack know to resolve imports from `"@cmsgov/design-system"` to the ES modules version when preferred.
+The `@cmsgov/design-system` package provides an ES modules version of our code (located in `dist/esnext`) to support Webpack 4's tree shaking optimizations. Our package is configured to use the `modules` property to let bundlers know to resolve imports from `"@cmsgov/design-system"` to the ES modules version when preferred. Read more about ESM in [Webpack's documentation](https://webpack.js.org/guides/author-libraries/#final-steps), or from [Rollup's proposal](https://github.com/rollup/rollup/wiki/pkg.module).
 
 ### Individual imports
 

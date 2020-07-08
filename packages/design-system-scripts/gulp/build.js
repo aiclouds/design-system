@@ -98,7 +98,7 @@ async function compileEsmJs(dir) {
         rename((path) => {
           if (path.dirname === '.' && path.basename === 'index') {
             // Renames `component/index.js` to `esnext/index.esm.js`
-            path.extname = '.mjs';
+            path.extname = '.esm.js';
           }
         })
       )
