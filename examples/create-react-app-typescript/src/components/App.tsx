@@ -1,4 +1,4 @@
-import { Alert, Badge, MonthPicker, getMonthNames } from '@cmsgov/design-system';
+import { Alert, Badge, MonthPicker, getMonthNames } from '@cmsgov/ds-healthcare-gov';
 import React, { SyntheticEvent, useState } from 'react';
 import usflag from '../images/us_flag_small.png';
 
